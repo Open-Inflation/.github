@@ -20,7 +20,7 @@
 
 **Чижик *(Chizhik)***
 
-* [![GitHub Actions](https://github.com/Open-Inflation/chizhik_api/workflows/Run%20API%20Tests%20Daily/badge.svg)](https://github.com/Open-Inflation/chizhik_api/actions?query=workflow%3A"Run+API+Tests+Daily")
+* [![GitHub Actions](https://github.com/Open-Inflation/chizhik_api/workflows/API%20Tests%20Daily/badge.svg)](https://github.com/Open-Inflation/chizhik_api/actions?query=workflow%3A"API+Tests+Daily")
 
 **Пятёрочка *(Pyaterochka)***
 
