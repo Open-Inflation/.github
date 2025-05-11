@@ -24,7 +24,7 @@
 
 **Пятёрочка *(Pyaterochka)***
 
-* Не создан
+* [![GitHub Actions](https://github.com/Open-Inflation/pyaterochka_api/workflows/API%20Tests%20Daily/badge.svg)](https://github.com/Open-Inflation/pyaterochka_api/actions?query=workflow%3A"API+Tests+Daily?query=branch%3Amain")
 
 **Перекрёсток *(Perekrestok)***
 
