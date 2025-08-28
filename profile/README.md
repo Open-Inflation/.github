@@ -28,7 +28,7 @@
 
 **Перекрёсток *(Perekrestok)***
 
-* Не создан
+* [![Tests](https://github.com/Open-Inflation/perekrestok_api/actions/workflows/tests.yml/badge.svg)](https://github.com/Open-Inflation/perekrestok_api/actions/workflows/tests.yml)
 
 **FixPrice**
 
