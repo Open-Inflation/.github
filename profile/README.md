@@ -16,23 +16,13 @@
 
 ### 1.2. Написанию unit-тестов
 
-> Для поддержания работоспособности библиотек требуется создать инструментарий для постоянного контроля за их устареванием и оперативным исправлением
+| Project        | Tests last run | Tests | Downloads |
+|----------------|----------------|-------|-----------|
+| [perekrestok_api](https://github.com/Open-Inflation/perekrestok_api) | ![Tests last run (ISO)](https://img.shields.io/badge/dynamic/json?label=Tests%20last%20run&query=%24.workflow_runs%5B0%5D.updated_at&url=https%3A%2F%2Fapi.github.com%2Frepos%2FOpen-Inflation%2Fperekrestok_api%2Factions%2Fworkflows%2Ftests.yml%2Fruns%3Fper_page%3D1%26status%3Dcompleted&logo=githubactions&cacheSeconds=300) | [![Tests](https://github.com/Open-Inflation/perekrestok_api/actions/workflows/tests.yml/badge.svg)](https://github.com/Open-Inflation/perekrestok_api/actions/workflows/tests.yml) | [![PyPI - Downloads](https://img.shields.io/pypi/dm/perekrestok_api?label=PyPi%20downloads)](https://pypi.org/project/perekrestok-api/) |
+| [chizhik_api](https://github.com/Open-Inflation/chizhik_api) | ![Tests last run (ISO)](https://img.shields.io/badge/dynamic/json?label=Tests%20last%20run&query=%24.workflow_runs%5B0%5D.updated_at&url=https%3A%2F%2Fapi.github.com%2Frepos%2FOpen-Inflation%2Fchizhik_api%2Factions%2Fworkflows%2Ftests.yml%2Fruns%3Fper_page%3D1%26status%3Dcompleted&logo=githubactions&cacheSeconds=300) | [![Tests](https://github.com/Open-Inflation/chizhik_api/actions/workflows/tests.yml/badge.svg)](https://github.com/Open-Inflation/chizhik_api/actions/workflows/tests.yml) | [![PyPI - Downloads](https://img.shields.io/pypi/dm/chizhik_api?label=PyPi%20downloads)](https://pypi.org/project/chizhik-api/) |
+| fixprice_api   | не реализовано | не реализовано | [![PyPI - Downloads](https://img.shields.io/pypi/dm/fixprice_api?label=PyPi%20downloads)](https://pypi.org/project/fixprice-api/) |
+| pyaterochka_api| не реализовано | не реализовано | [![PyPI - Downloads](https://img.shields.io/pypi/dm/pyaterochka_api?label=PyPi%20downloads)](https://pypi.org/project/pyaterochka-api/) |
 
-**Чижик *(Chizhik)***
-
-* [![GitHub Actions](https://github.com/Open-Inflation/chizhik_api/workflows/API%20Tests%20Daily/badge.svg)](https://github.com/Open-Inflation/chizhik_api/actions?query=workflow%3A"API+Tests+Daily")
-
-**Пятёрочка *(Pyaterochka)***
-
-* [![GitHub Actions](https://github.com/Open-Inflation/pyaterochka_api/workflows/API%20Tests%20Daily/badge.svg)](https://github.com/Open-Inflation/pyaterochka_api/actions?query=workflow%3A"API+Tests+Daily?query=branch%3Amain")
-
-**Перекрёсток *(Perekrestok)***
-
-* [![Tests](https://github.com/Open-Inflation/perekrestok_api/actions/workflows/tests.yml/badge.svg)](https://github.com/Open-Inflation/perekrestok_api/actions/workflows/tests.yml)
-
-**FixPrice**
-
-* Не создан
 
 ### 2. Создание "сборочных конвееров"
 
