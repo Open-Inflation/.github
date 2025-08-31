@@ -1,27 +1,15 @@
 # An open source project to collect consumer inflation data worldwide
 
-# Roadmap / Дорожная карта
-### 1. Создание библиотек для парсинга популярных розничных магазинов, а именно:
-
-> Библиотеки будут только предоставлять текущий каталог *(в виде JSON)* и сохранение изображений *(в виде изображения PNG/JPEG записанных в ОЗУ)* возвращаемых несколькими асинхронными функциями.
-
-#### В России:
-
-1. Продуктовых: [Чижик](https://github.com/Open-Inflation/chizhik_api) ✅ *(низкие цены)*, [Пятёрочка](https://github.com/Open-Inflation/pyaterochka_api) ✅ *(средний сегмент)*, Магнит ⛔ *(средний сегмент)* [^1], [Перекрёсток](https://github.com/Open-Inflation/perekrestok_api) ✅ *(дорогой сегмент)*
-2. Околопродуктовых: [FixPrice](https://github.com/Open-Inflation/fixprice_api) ✅ *(товары для дома)* [^2]
-3. Электроника: DNS 👷, Eldorado 🕒, Citilink 🕒, M.video 🕒
-
-[^1]: Сайт крайне медленный, написан как монолитный web-сервер, из-за чего для разработки и поддержания библиотеки требуется сильно больше сил чем обычно.
-[^2]: Функция для получения информации о продукте не реализована, так как эта информация вшита в html код, решил не делать парсер пока не будут написаны тесты.
-
-### 1.2. Написанию unit-тестов
-
-| Project        | Tests last run | Tests | Downloads |
-|----------------|----------------|-------|-----------|
-| [perekrestok_api](https://github.com/Open-Inflation/perekrestok_api) | ![Tests last run (ISO)](https://img.shields.io/badge/dynamic/json?label=Tests%20last%20run&query=%24.workflow_runs%5B0%5D.updated_at&url=https%3A%2F%2Fapi.github.com%2Frepos%2FOpen-Inflation%2Fperekrestok_api%2Factions%2Fworkflows%2Ftests.yml%2Fruns%3Fper_page%3D1%26status%3Dcompleted&logo=githubactions&cacheSeconds=300) | [![Tests](https://github.com/Open-Inflation/perekrestok_api/actions/workflows/tests.yml/badge.svg)](https://github.com/Open-Inflation/perekrestok_api/actions/workflows/tests.yml) | [![PyPI - Downloads](https://img.shields.io/pypi/dm/perekrestok_api?label=PyPi%20downloads)](https://pypi.org/project/perekrestok-api/) |
-| [chizhik_api](https://github.com/Open-Inflation/chizhik_api) | ![Tests last run (ISO)](https://img.shields.io/badge/dynamic/json?label=Tests%20last%20run&query=%24.workflow_runs%5B0%5D.updated_at&url=https%3A%2F%2Fapi.github.com%2Frepos%2FOpen-Inflation%2Fchizhik_api%2Factions%2Fworkflows%2Ftests.yml%2Fruns%3Fper_page%3D1%26status%3Dcompleted&logo=githubactions&cacheSeconds=300) | [![Tests](https://github.com/Open-Inflation/chizhik_api/actions/workflows/tests.yml/badge.svg)](https://github.com/Open-Inflation/chizhik_api/actions/workflows/tests.yml) | [![PyPI - Downloads](https://img.shields.io/pypi/dm/chizhik_api?label=PyPi%20downloads)](https://pypi.org/project/chizhik-api/) |
-| [fixprice_api](https://github.com/Open-Inflation/fixprice_api)   | ![Tests last run (ISO)](https://img.shields.io/badge/dynamic/json?label=Tests%20last%20run&query=%24.workflow_runs%5B0%5D.updated_at&url=https%3A%2F%2Fapi.github.com%2Frepos%2FOpen-Inflation%2Ffixprice_api%2Factions%2Fworkflows%2Ftests.yml%2Fruns%3Fper_page%3D1%26status%3Dcompleted&logo=githubactions&cacheSeconds=300) | [![Tests](https://github.com/Open-Inflation/fixprice_api/actions/workflows/tests.yml/badge.svg)](https://github.com/Open-Inflation/fixprice_api/actions/workflows/tests.yml) | [![PyPI - Downloads](https://img.shields.io/pypi/dm/fixprice_api?label=PyPi%20downloads)](https://pypi.org/project/fixprice-api/) |
-| [pyaterochka_api](https://github.com/Open-Inflation/pyaterochka_api) | не реализовано | не реализовано | [![PyPI - Downloads](https://img.shields.io/pypi/dm/pyaterochka_api?label=PyPi%20downloads)](https://pypi.org/project/pyaterochka-api/) |
+| Project        | Store type          | Tests last run | Tests | Downloads |
+|----------------|---------------------|----------------|-------|-----------|
+| [perekrestok_api](https://github.com/Open-Inflation/perekrestok_api) | food (mid/expensive) | ![Tests last run (ISO)](https://img.shields.io/badge/dynamic/json?label=Tests%20last%20run&query=%24.workflow_runs%5B0%5D.updated_at&url=https%3A%2F%2Fapi.github.com%2Frepos%2FOpen-Inflation%2Fperekrestok_api%2Factions%2Fworkflows%2Ftests.yml%2Fruns%3Fper_page%3D1%26status%3Dcompleted&logo=githubactions&cacheSeconds=300) | [![Tests](https://github.com/Open-Inflation/perekrestok_api/actions/workflows/tests.yml/badge.svg)](https://github.com/Open-Inflation/perekrestok_api/actions/workflows/tests.yml) | [![PyPI - Downloads](https://img.shields.io/pypi/dm/perekrestok_api?label=PyPi%20downloads)](https://pypi.org/project/perekrestok-api/) |
+| [chizhik_api](https://github.com/Open-Inflation/chizhik_api) | food (cheap) | ![Tests last run (ISO)](https://img.shields.io/badge/dynamic/json?label=Tests%20last%20run&query=%24.workflow_runs%5B0%5D.updated_at&url=https%3A%2F%2Fapi.github.com%2Frepos%2FOpen-Inflation%2Fchizhik_api%2Factions%2Fworkflows%2Ftests.yml%2Fruns%3Fper_page%3D1%26status%3Dcompleted&logo=githubactions&cacheSeconds=300) | [![Tests](https://github.com/Open-Inflation/chizhik_api/actions/workflows/tests.yml/badge.svg)](https://github.com/Open-Inflation/chizhik_api/actions/workflows/tests.yml) | [![PyPI - Downloads](https://img.shields.io/pypi/dm/chizhik_api?label=PyPi%20downloads)](https://pypi.org/project/chizhik-api/) |
+| [fixprice_api](https://github.com/Open-Inflation/fixprice_api) | food+household (cheap) | ![Tests last run (ISO)](https://img.shields.io/badge/dynamic/json?label=Tests%20last%20run&query=%24.workflow_runs%5B0%5D.updated_at&url=https%3A%2F%2Fapi.github.com%2Frepos%2FOpen-Inflation%2Ffixprice_api%2Factions%2Fworkflows%2Ftests.yml%2Fruns%3Fper_page%3D1%26status%3Dcompleted&logo=githubactions&cacheSeconds=300) | [![Tests](https://github.com/Open-Inflation/fixprice_api/actions/workflows/tests.yml/badge.svg)](https://github.com/Open-Inflation/fixprice_api/actions/workflows/tests.yml) | [![PyPI - Downloads](https://img.shields.io/pypi/dm/fixprice_api?label=PyPi%20downloads)](https://pypi.org/project/fixprice-api/) |
+| [pyaterochka_api](https://github.com/Open-Inflation/pyaterochka_api) | food (mid) | not implemented | not implemented | [![PyPI - Downloads](https://img.shields.io/pypi/dm/pyaterochka_api?label=PyPi%20downloads)](https://pypi.org/project/pyaterochka-api/) |
+| dns_api | electronics (mid) | not implemented | not implemented | not implemented |
+| eldorado_api | electronics (mid) | not implemented | not implemented | not implemented |
+| citilink_api | electronics (mid/cheap) | not implemented | not implemented | not implemented |
+| mvideo_api | electronics (mid/expensive) | not implemented | not implemented | not implemented |
 
 
 ### 2. Создание "сборочных конвееров"
